@@ -6,6 +6,7 @@ import 'package:nanglea/app/modules/home/bindings/home_binding.dart';
 import 'package:nanglea/app/modules/home/views/home_view.dart';
 import 'package:nanglea/app/modules/item_list/bindings/item_list_binding.dart';
 import 'package:nanglea/app/modules/item_list/views/item_list_view.dart';
+import 'package:nanglea/app/modules/item_list/views/test.dart';
 
 part 'app_routes.dart';
 
@@ -27,6 +28,10 @@ class AppPages {
       name: _Paths.ITEM_LIST,
       page: () => ItemListView(),
       binding: ItemListBinding(),
+    ),
+    GetPage(
+      name: _Paths.TEST,
+      page: () => Test(),
     ),
   ];
 }

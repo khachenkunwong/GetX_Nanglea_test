@@ -439,7 +439,7 @@ const List<String> history = [
   "The_cultural_attraction",
   "Tung_Kieng_Doi_Rest",
   "Strawberry_Garden_Chom_Doi_Homestay_is_an",
-  "Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_NangLaeSub_district",
+  "Hong_Hom_hh", //
   "This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_",
   "Doi_Din_Daeng_Pottery_is_one_of_the_best_pottery_production_site",
   "Five_long_neck_Karen_hilltribe_villages_are_cultural_attractions_including_the_long",
@@ -520,8 +520,8 @@ const List<String> note = [
   "coffee_shop_is_available_for_tourists",
   "person",
   "Recommended_Dish__Khao_Soi_Chicken_with_coconut_milk",
-  "Cooking_School_Cooking_ClassRecommended_Dish__Khanom"
-      "Cooking_School_Cooking_ClassRecommended_Dish__Khanom_Jin_Nam_NgiaoRice_noodles_with_spicy_pork_sauce",
+  "Cooking_School_Cooking_ClassRecommended_Dish__Khanom",
+  "Cooking_School_Cooking_ClassRecommended_Dish__Khanom_Jin_Nam_NgiaoRice_noodles_with_spicy_pork_sauce",
   "Menu__Pizza_with_thin_crust_covering_with_pineapple_ham_and_cheese",
   "Menu_Nang_Lae_Pineapple_coffee",
   "Papaya_spicy_salad_Grilled_chicken",

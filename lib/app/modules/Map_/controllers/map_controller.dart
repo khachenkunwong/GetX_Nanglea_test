@@ -7,6 +7,7 @@ import 'package:location/location.dart';
 import 'package:nanglea/app/data/assets.dart';
 import 'package:nanglea/app/modules/Map_/views/coffee_model.dart';
 import 'package:nanglea/app/modules/Map_/views/map_view.dart';
+import 'package:nanglea/app/routes/app_pages.dart';
 
 class MapController extends GetxController {
   //มันมีคำว่า get ในชื่อ
@@ -40,91 +41,91 @@ class MapController extends GetxController {
       LatLng(19.992118, 99.860694),
     ),
     TravelList(
-      "นาขั้นบันได",
+      hardtext[1],
       22.5,
       1,
       LatLng(20.044707, 99.828704),
     ),
     TravelList(
-      "น้ำตกนางเเลใน",
+      hardtext[2],
       24.7,
       2,
       LatLng(20.064509, 99.811011),
     ),
     TravelList(
-      "สวนสตอเบอร์รี่ชมดอย โฮมสเตย์",
+      hardtext[3],
       22.1,
       3,
       LatLng(20.027004, 99.844637),
     ),
     TravelList(
-      "ร้านทุ่งเคียงดอย & เคียงดอยคาเฟ่",
+      hardtext[4],
       22.1,
       4,
       LatLng(20.033889, 99.836202),
     ),
     TravelList(
-      "โฮงฮอมผญ๋า โฮงยาหมอเมืองล้านนา ตำบทนางแล",
+      hardtext[5],
       22.1,
       5,
       LatLng(20.033839, 99.855696),
     ),
     TravelList(
-      "ร้าน Pasang",
+      hardtext[6],
       22.1,
       6,
       LatLng(20.015930, 99.520620),
     ),
     TravelList(
-      "ร้านไก่ย่างภูแล",
+      hardtext[7],
       22.1,
       7,
       LatLng(20.017781, 99.882237),
     ),
     TravelList(
-      "เครื่องปั้นดินเผาดอยดินแดง",
+      hardtext[8],
       22.1,
       8,
       LatLng(20.019234, 99.889824),
     ),
     TravelList(
-      "ชุมชนบ้านป่าอ้อ 5 ชนเผ่ากระเหรี่ยงคอยาว",
+      hardtext[9],
       22.1,
       9,
       LatLng(19.992970, 99.861781),
     ),
     TravelList(
-      "ร้าน Gibe Green Farm House Restaurant (กีฟ กรีน ฟาร์ม เฮ้าส์)",
+      hardtext[10],
       22.1,
       10,
       LatLng(19.992596, 99.859079),
     ),
     TravelList(
-      "ร้าน Some Sunday Magic",
+      hardtext[11],
       22.1,
       11,
       LatLng(19.994223, 99.864782),
     ),
     TravelList(
-      "ร้าน Box Cafe",
+      hardtext[12],
       22.1,
       12,
       LatLng(19.992283, 99.863845),
     ),
     TravelList(
-      "ร้าน ๙ Cafe Chiang Rai",
+      hardtext[13],
       22.1,
       13,
       LatLng(20.031752, 99.872231),
     ),
     TravelList(
-      "ร้าน Di Angello Pizzeria",
+      hardtext[14],
       22.1,
       14,
       LatLng(20.032092, 99.873869),
     ),
     TravelList(
-      "สวนคุณปู่สับปะรดอินทรีย์",
+      hardtext[15],
       22.1,
       15,
       LatLng(19.993666, 99.864708),
@@ -223,101 +224,98 @@ class MapController extends GetxController {
         );
       },
       child: InkWell(
-          onTap: () async {
-            // l.insert(0, index);
-            await Future.delayed(Duration(milliseconds: 200));
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (context) {
-            //       return Item();
-            //     },
-            //     fullscreenDialog: true,
-            //   ),
-            // );
-          },
-          child: Hero(
-            tag: "card${index}",
-            child: Stack(children: [
-              Center(
+        onTap: () async {
+          l.insert(0, index);
+          await Future.delayed(Duration(milliseconds: 200));
+          Get.toNamed(Routes.ITEM_LIST);
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(
+          //     builder: (context) {
+          //       return Item();
+          //     },
+          //     fullscreenDialog: true,
+          //   ),
+          // );
+        },
+        child: Stack(children: [
+          Center(
+              child: Container(
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 10.0,
+                    vertical: 20.0,
+                  ),
+                  height: 125.0,
+                  width: 275.0,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black54,
+                          offset: Offset(0.0, 4.0),
+                          blurRadius: 10.0,
+                        ),
+                      ]),
                   child: Container(
-                      margin: EdgeInsets.symmetric(
-                        horizontal: 10.0,
-                        vertical: 20.0,
-                      ),
-                      height: 125.0,
-                      width: 275.0,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black54,
-                              offset: Offset(0.0, 4.0),
-                              blurRadius: 10.0,
-                            ),
-                          ]),
-                      child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.0),
-                              color: Colors.white),
-                          child: Row(children: [
-                            Flexible(
-                              flex: 1,
-                              fit: FlexFit.tight,
-                              child: Container(
-                                  height: 90.0,
-                                  width: 90.0,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.only(
-                                          bottomLeft: Radius.circular(10.0),
-                                          topLeft: Radius.circular(10.0)),
-                                      image: DecorationImage(
-                                          image: AssetImage(//NetworkImage(
-                                              coffeeShops[index].thumbNail),
-                                          fit: BoxFit.cover))),
-                            ),
-                            Flexible(
-                              flex: 2,
-                              fit: FlexFit.tight,
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Flexible(
-                                        flex: 1,
-                                        fit: FlexFit.tight,
-                                        child:
-                                            Text(coffeeShops[index].shopName.tr,
-                                                style: TextStyle(
-                                                  fontSize: 12.5,
-                                                  fontFamily: "Kanit",
-                                                  color: Colors.grey[600],
-                                                )),
-                                      ),
-                                      Flexible(
-                                        flex: 2,
-                                        fit: FlexFit.tight,
-                                        child: Container(
-                                          width: 170.0,
-                                          child: Text(
-                                              coffeeShops[index].description.tr,
-                                              style: TextStyle(
-                                                fontSize: 11.0,
-                                                fontFamily: "Kanit",
-                                                color: Colors.grey[600],
-                                              )),
-                                        ),
-                                      )
-                                    ]),
-                              ),
-                            )
-                          ]))))
-            ]),
-          )),
+                          color: Colors.white),
+                      child: Row(children: [
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: Container(
+                              height: 90.0,
+                              width: 90.0,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                      bottomLeft: Radius.circular(10.0),
+                                      topLeft: Radius.circular(10.0)),
+                                  image: DecorationImage(
+                                      image: AssetImage(//NetworkImage(
+                                          coffeeShops[index].thumbNail),
+                                      fit: BoxFit.cover))),
+                        ),
+                        Flexible(
+                          flex: 2,
+                          fit: FlexFit.tight,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Flexible(
+                                    flex: 1,
+                                    fit: FlexFit.tight,
+                                    child: Text(coffeeShops[index].shopName.tr,
+                                        style: TextStyle(
+                                          fontSize: 12.5,
+                                          fontFamily: "Kanit",
+                                          color: Colors.grey[600],
+                                        )),
+                                  ),
+                                  Flexible(
+                                    flex: 2,
+                                    fit: FlexFit.tight,
+                                    child: Container(
+                                      width: 170.0,
+                                      child: Text(
+                                          coffeeShops[index].description.tr,
+                                          style: TextStyle(
+                                            fontSize: 11.0,
+                                            fontFamily: "Kanit",
+                                            color: Colors.grey[600],
+                                          )),
+                                    ),
+                                  )
+                                ]),
+                          ),
+                        )
+                      ]))))
+        ]),
+      ),
     );
   }
 

@@ -50,8 +50,9 @@ class HomeView extends GetView<HomeController> {
                 child: SizedBox(
                   width: 250.0,
                   height: 50.0,
-                  child: CupertinoButton.filled(
-                      //color: const Color(0xff4990e2),
+                  child: CupertinoButton(
+                      color: const Color(0xff4990e2),
+                      // disabledColor: const Color(0xff4990e2),
                       child: Text(
                         "ภาษาไทย",
                         textAlign: TextAlign.center,
@@ -74,14 +75,14 @@ class HomeView extends GetView<HomeController> {
                 child: SizedBox(
                   width: 250.0,
                   height: 50.0,
-                  child: CupertinoButton.filled(
-                      //color: const Color(0xff4990e2),
+                  child: CupertinoButton(
+                      color: const Color(0xff4990e2),
                       child: Text(
                         "English",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontFamily: "Arial",
-                            fontSize: 20.00,
+                            fontSize: 18.00,
                             color: Colors.white),
                       ),
                       onPressed: () {
@@ -98,14 +99,14 @@ class HomeView extends GetView<HomeController> {
                 child: SizedBox(
                   width: 250.0,
                   height: 50.0,
-                  child: CupertinoButton.filled(
-                      //color: const Color(0xff4990e2),
+                  child: CupertinoButton(
+                      color: const Color(0xff4990e2),
                       child: Text(
                         "日本語",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontFamily: "Arial",
-                            fontSize: 20.00,
+                            fontSize: 18.00,
                             color: Colors.white),
                       ),
                       onPressed: () {
@@ -122,14 +123,14 @@ class HomeView extends GetView<HomeController> {
                 child: SizedBox(
                   width: 250.0,
                   height: 50.0,
-                  child: CupertinoButton.filled(
-                      //color: const Color(0xff4990e2),
+                  child: CupertinoButton(
+                      color: const Color(0xff4990e2),
                       child: Text(
                         "中文",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontFamily: "Arial",
-                            fontSize: 20.00,
+                            fontSize: 18.00,
                             color: Colors.white),
                       ),
                       onPressed: () {
@@ -146,14 +147,14 @@ class HomeView extends GetView<HomeController> {
                 child: SizedBox(
                   width: 250.0,
                   height: 50.0,
-                  child: CupertinoButton.filled(
-                      //color: const Color(0xff4990e2),
+                  child: CupertinoButton(
+                      color: const Color(0xff4990e2),
                       child: Text(
                         "한국어",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontFamily: "Arial",
-                            fontSize: 20.00,
+                            fontSize: 18.00,
                             color: Colors.white),
                       ),
                       onPressed: () {

@@ -1,4 +1,5 @@
 // DO NOT EDIT. This is code generated via package:get_cli/get_cli.dart
+
 import 'package:get/get.dart';
 
 class AppTranslation extends Translations {
@@ -59,6 +60,7 @@ class LocaleKeys {
   static const Tung_Kieng_Doi_Rest = 'Tung_Kieng_Doi_Rest';
   static const Strawberry_Garden_Chom_Doi_Homestay_is_an =
       'Strawberry_Garden_Chom_Doi_Homestay_is_an';
+  static const Hong_Hom_hh = 'Hong_Hom_hh';
   static const This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_ =
       'This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_';
   static const Doi_Din_Daeng_Pottery_is_one_of_the_best_pottery_production_site =
@@ -186,6 +188,10 @@ class LocaleKeys {
   static const LIST = 'LIST';
   static const Not_found = 'Not_found';
   static const Search_place = 'Search_place';
+  static const Office_hours_tt = 'Office_hours_tt';
+  static const Place_tt = 'Place_tt';
+  static const Telephone_tt = 'Telephone_tt';
+  static const Information_tt = 'Information_tt';
 }
 
 class Locales {
@@ -216,7 +222,8 @@ class Locales {
     'Some_Sunday_Magic': 'Some Sunday magic  餐厅',
     'Give_Green_Farm_House': 'Give green绿色食品餐厅',
     'Di_Angello_Pizzeria': 'Di Angello 意大利正宗披萨店',
-    'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang': '泰北兰纳传统按摩保健中心',
+    'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang':
+        '本土泰式Lanna 传统按摩位于清莱Nang lea 县，感受泰北清莱文化，体验传统兰纳正宗..',
     'Suan_Khun_Poo_Grandfather_Graden': '爷爷有机菠萝种植.',
     'Ban_Pa_Oh_Community_Long_Neck_Karen': '长颈族村',
     'The_Art_Gallery_of_AjarnThawan_Duchanee_National_Artist_in_Visual_A':
@@ -229,6 +236,8 @@ class Locales {
         '这一家小清新餐馆坐落于一望无际的田园，餐厅是由祖先传下来，据说最初是kru  La (奶奶）带着孙子参观农家田园，在大城市长大的孙子一看到水稻 螃蟹 小鱼就感兴趣 ，因此对其提出各种问题 。随后奶奶觉得这里可以让后代学习了解农家生活、且能更加了解家乡的各家文化。奶奶从竹木建造凉亭，此外还沿着田边构造了竹木桥 ，随后 游客渐渐光临，游客们见到此地的田园令游客们想在大自然环境中喝咖啡。因优美的山、田园风格而取了 tung kieng doi 餐厅。',
     'Strawberry_Garden_Chom_Doi_Homestay_is_an':
         'chom doi 草莓田园,这里是清莱种草莓的绝佳胜地之一，有机的种植使草莓的味道更好，营养更丰富 。周围还种着鲜艳的万寿花 开放时间：早上06.00至晚上18.00',
+    'Hong_Hom_hh':
+        '本土泰式Lanna 传统按摩位于清莱Nang lea 县，感受泰北清莱文化，体验传统兰纳正宗的按摩！如：敲筋按摩法、草药火疗及草药熏蒸治疗多种可选择。',
     'This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_':
         '自然的田园风光，参观insee爷爷菠萝种植园可了解更多的关于清莱最佳蜂蜜菠萝（Nang lea)品种，还可以品尝新鲜的菠萝,相对普通菠萝，这里的菠萝口感更加细腻，浓郁脆甜，肉质柔软纤维少，不塞牙。成熟后的菠萝浓香四溢，甜美可口，毫不酸涩，清莱的菠萝还被“国家地形地貌”指示蜂蜜菠萝只需在清莱Nang lea 县种植',
     'Doi_Din_Daeng_Pottery_is_one_of_the_best_pottery_production_site':
@@ -354,6 +363,10 @@ class Locales {
     'LIST': '清单',
     'Not_found': 'Not found',
     'Search_place': '搜索 地点',
+    'Office_hours_tt': '工作 时间 : ',
+    'Place_tt': '地点 : ',
+    'Telephone_tt': '电话 : ',
+    'Information_tt': '信息 : ',
   };
   static const en_EN = {
     'Baandam_Black_House_Museum': 'Baandam (Black House) Museum ',
@@ -387,7 +400,7 @@ class Locales {
     'Give_Green_Farm_House': 'Give Green Farm House ..  ',
     'Di_Angello_Pizzeria': 'Di Angello Pizzeria .. ',
     'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang':
-        'Hong Hom Pa Ya:  , Hong Ya Moh Muang Lanna:  , Nang.. ',
+        'Hong Hom Pa Ya, Hong Ya Moh Muang Lanna, Nang Lae Sub-district',
     'Suan_Khun_Poo_Grandfather_Graden':
         'Suan Khun Poo (Grandfather’s Graden).. ',
     'Ban_Pa_Oh_Community_Long_Neck_Karen':
@@ -402,6 +415,8 @@ class Locales {
         'Tung Kieng Doi Restaurant is located on the field where the children have inherited from their ancestors. During the farming season:  , the grandmother (the teacher named:  ,“Lah”) took her nephew growing in a concrete forest to walk along the ridge. When her nephew saw rice:  , crabs:  , fish:  , and mussels (cherry):  , he was so excited with many questions.        The grandmother thought that this place should be a source of learning and raise awareness for the children of the peasant family to love home:  , to love the career of the ancestors:  , and to love the nature of the field:  ,  so the grandmother built the Hang Na (pavilion) from the bamboo and made a walkway along the ridge. Later:  , visitors have visited and would like to sip coffee in the midst of nature surrounding with fields and mountains:  , so:  , the words:  , “Tung Kieng Doi” happened in this place. Tung Kieng Doi Restaurant & Kieng Doi Café is a small coffee shop to welcome visitors to sit and sip coffee and watch the mountain (Doi) that the real name must be proven. ',
     'Strawberry_Garden_Chom_Doi_Homestay_is_an':
         'Strawberry Garden Chom Doi Homestay is another good place to grow good species of strawberries in Chiangrai with the non-toxic growth:  ,  so the taste of them is so sweet and safe. Close to them there are beautiful and colorful marigold flowers to see during the season. ',
+    'Hong_Hom_hh':
+        'Hong Hom Pa Ya, Hong Ya Moh Muang Lanna, Nang Lae Sub-district',
     'This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_':
         'This learning source is about how to grow honey pineapples (Nang Lae) and to taste fresh and smooth pineapples from the garden. The smell is sweet like honey. The taste is so sweet and it is different from general pineapples. They confirm the deliciousness of the registration:  , Geographical Indication that the honey pineapples (Nang Lae) must be planted in Nang Lae Sub-district only. ',
     'Doi_Din_Daeng_Pottery_is_one_of_the_best_pottery_production_site':
@@ -533,6 +548,10 @@ class Locales {
     'LIST': 'LIST ',
     'Not_found': 'Not found ',
     'Search_place': 'Search place',
+    'Office_hours_tt': 'Office hours : ',
+    'Place_tt': 'Place : ',
+    'Telephone_tt': 'Telephone : ',
+    'Information_tt': 'Information : ',
   };
   static const jp_JP = {
     'Baandam_Black_House_Museum': 'バーンダム博物館',
@@ -563,7 +582,8 @@ class Locales {
     'Some_Sunday_Magic': 'Some Sunday Magic',
     'Give_Green_Farm_House': 'Give Green Farm House .',
     'Di_Angello_Pizzeria': 'Di Angello Pizzeria',
-    'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang': 'ホンホムパヤー　ホンモームアン　ランナー.',
+    'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang':
+        'ランナー（北タイ）の伝統医療センター。ランナーの伝統医療技術の見学、体験が..',
     'Suan_Khun_Poo_Grandfather_Graden': 'スアンクンプーサッパロッドインシー（パイナップル畑）',
     'Ban_Pa_Oh_Community_Long_Neck_Karen': 'シュムションバーンパーオー　ハーション.',
     'The_Art_Gallery_of_AjarnThawan_Duchanee_National_Artist_in_Visual_A':
@@ -576,6 +596,8 @@ class Locales {
         '田んぼの中に作られた喫茶店。この田んぼの所有者「ラー先生」と呼ばれるおばあさんの孫たちによって作られた。昔、ラー先生は田植えの季節になると、都会育ちの孫を田んぼに連れて来ていた。その子は田んぼを歩き、稲、蟹、魚、貝などを見るのが大好きで、ラー先生にいろいろなことを聞いた。ラー先生はその体験をきっかけに、孫たちが自分たちの家の歴史や先祖代々の職業、自然について学べる場を作ろうと思い立った。ラー先生は竹で小屋を作り、田んぼへと続く橋も作った。その後、観光客が訪れ、田んぼを見たり、コーヒーを飲んだりするようになり、ラー先生の孫たちが「トゥンキャンドイ」という喫茶店を作った。小さい喫茶店だが、美しい景色を眺めながら、ゆっくりとした時間を過ごすことができる。',
     'Strawberry_Garden_Chom_Doi_Homestay_is_an':
         'いちご畑。安全で、甘くおいしいいちごが食べられる。近くにマリーゴールドの花畑もある。',
+    'Hong_Hom_hh':
+        'ランナー（北タイ）の伝統医療センター。ランナーの伝統医療技術の見学、体験が可能。踏む、筋を打つ、擦るなどのマッサージや、ハーブを用いての治療など。',
     'This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_':
         'この地域の特産品であるパイナップル（ナーンレー種）の畑。パイナップルの植え方の見学や試食ができる。ナーンレー種はさっぱりした味で食べやすく、蜂蜜のような香りが特徴的。ナーンレー種のパイナップルはナーンレー地域でのみ生産されている。',
     'Doi_Din_Daeng_Pottery_is_one_of_the_best_pottery_production_site':
@@ -700,6 +722,10 @@ class Locales {
     'LIST': 'リスト',
     'Not_found': 'Not found',
     'Search_place': '場所',
+    'Office_hours_tt': '勤務 時間 : ',
+    'Place_tt': '場所 : ',
+    'Telephone_tt': 'コール : ',
+    'Information_tt': '一般 情報 : ',
   };
   static const kr_KR = {
     'Baandam_Black_House_Museum': '검은 집 박물관',
@@ -730,7 +756,8 @@ class Locales {
     'Some_Sunday_Magic': '썸 선데이 매직 (Some .',
     'Give_Green_Farm_House': '기브 그린 팜 하우스 (Give .',
     'Di_Angello_Pizzeria': '디 앤젤로 피저리아 (Di .',
-    'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang': '홍 험 파야, 홍 야 머므앙 란나, 땀본 낭래',
+    'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang':
+        '낭래 면에 위치한 ‘홍 험 파야’, 또는 ‘홍 야 머므앙 란나’라고 불리는 곳은 ..',
     'Suan_Khun_Poo_Grandfather_Graden': '쑤안 쿤 뿌 유기농 파인애플 밭',
     'Ban_Pa_Oh_Community_Long_Neck_Karen': '반 빠어 마을 5개 긴 목 카렌 산족촌',
     'The_Art_Gallery_of_AjarnThawan_Duchanee_National_Artist_in_Visual_A':
@@ -743,6 +770,8 @@ class Locales {
         '퉁 키양 더이 식당은 후손들이 윗세대로부터 물려 받은 논밭에 위치해 있습니다. 농사철의 어느 날, 한 할머니(”라”라는 이름을 가진 선생님)가 건물이 꽉 들어 찬 시내에서 자라 온 손자를 데리고 논두렁을 지나고 있었습니다. 그 길을 지나는 동안 손자는 벼, 물고기, 게 그리고 조개(체리)를 보며 신나 했고, 할머니에게 여러 질문을 했습니다. 할머니는 그 모습을 보며 이 곳이 배움의 장소가 되어야 한다고 생각했고, 농촌 가족에서 태어난 손자에게 고향을 사랑하는 마음, 조상들의 업적을 자랑스러워 하는 마음, 자연을 사랑하는 마음을 심어주고 싶었습니다. 그래서 할머니는 대나무로 항나(정자)를 짓고 논두렁에 다리를 놓았습니다. 그 후 관광객들은 산, 논밭으로 둘러 싸인 자연 환경에서 커피를 마시고 싶어 했고, 그 결과 ‘퉁 키양 더이(산에 가까운 농장)’라는 말이 생기게 되었습니다. 퉁 키양 더이 식당과 키양 더이 카페는 방문객들이 커피를 마시면서 ‘더이 당’ 산을 볼 수 있는 작은 커피숍이며, 그 이름이 장소에 정말 어울리는지 가서 확인해 볼 만한 장소입니다',
     'Strawberry_Garden_Chom_Doi_Homestay_is_an':
         '촘 더이 딸기밭 홈스테이는 치앙라이에서 무독성 재배 방식으로 좋은 품종의 딸기를 재배하는 곳입니다. 따라서 이 곳 딸기의 맛은 달콤하고 안전합니다. 주변에는 계절에 따라 매리골드 꽃이 아름답게 피는 아름다운 꽃밭이 있습니다',
+    'Hong_Hom_hh':
+        '낭래 면에 위치한 ‘홍 험 파야’, 또는 ‘홍 야 머므앙 란나’라고 불리는 곳은 방문객들에게 란나에 대한 전통 지식 및 정보를  제공하는 센터이며, 불 위로 걷기, 근육 자극하기, 닦아내기, 구운 허브 사용하기 등과 같은 란나의 전통적인 치료요법을 전수하는 곳입니다.',
     'This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_':
         '‘꿀 품종 파인애플(낭래 파인애플)’을 재배하는 방법을 배우는 곳입니다. 농장에서는 신선하고 부드러운 파인애플을 맛볼 수도 있습니다. 이 곳의 파인애플은 냄새도 꿀처럼 달콤하고 아주 달며, 일반 파인애플과 다릅니다. ‘꿀 품종 파인애플(낭래 파인애플)’은 낭래의 지리적 특성 때문에 낭래에서 재배되어야만 제 맛이 난다고 합니다',
     'Doi_Din_Daeng_Pottery_is_one_of_the_best_pottery_production_site':
@@ -869,6 +898,10 @@ class Locales {
     'LIST': '명부',
     'Not_found': 'Not found',
     'Search_place': '위치',
+    'Office_hours_tt': '근무 시간 : ',
+    'Place_tt': '위치 : ',
+    'Telephone_tt': '전화 : ',
+    'Information_tt': '일반 정보 : ',
   };
   static const th_TH = {
     'Baandam_Black_House_Museum': 'พิพิธภัณฑ์บ้านดำ',
@@ -900,7 +933,8 @@ class Locales {
     'Some_Sunday_Magic': 'ร้าน Some Sunday Magic',
     'Give_Green_Farm_House': 'ร้าน Give Green Farm House.',
     'Di_Angello_Pizzeria': 'ร้าน Di Angello Pizzeria (ดิแอง.',
-    'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang': 'ร้าน Box Cafe\'',
+    'Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang':
+        'โฮงฮอมผญ๋า โฮงยาหมอเมืองล้านนา ตําบลนางแล ศูนย์เผยแพร่ความรู้ภูมิปัญญาแบบพื้นบ้าน..',
     'Suan_Khun_Poo_Grandfather_Graden': 'สวนคุณปู่สับปะรดอินทรีย์',
     'Ban_Pa_Oh_Community_Long_Neck_Karen':
         'ชุมชุนบ้านป่าอ้อ5ชนเผ่ากระเหรี่ยงคอยาว',
@@ -914,6 +948,8 @@ class Locales {
         'ร้านทุ่งเคียงดอยตั้งอยู่บนทุ่งนาที่ลูกหลานได้รับสืบทอดมาจากบรรพบุรุษ ในช่วงฤดูทํานาคุณยาย (ครู หล้า) ได้พาหลานชายที่เติบโตในป่าคอนกรีตเดินเลาะตามคันนา เมื่อหลานชายเห็นต้นข้าว ปู ปลา และ หอย (เชอรี่) จึงตื่นเต้นสนใจ พร้อมกับคําถามมากมายคุณยายเกิดความคิดว่าสถานที่แห่งนี้น่าจะ เป็นแหล่งเรียนรู้และปลุกจิตสํานึกให้ลูกหลานชาวบารักถิ่นฐานบ้านเกิด รักอาชีพของบรรพบุรุษ รัก ธรรมชาติของท้องทุ่งนา คุณยายจึงสร้างฮ่างนา (กระท่อม) จากไม้ไผ่และทําสะพานทางเดินเลาะตาม คันนาต่อมามีนักท่องเที่ยวแวะเยี่ยมชมและอยากนั่งจิบกาแฟท่ามกลางธรรมชาติที่มีทั้งทุ่งนาและภูเขา คําว่า ทุ่งเคียงดอย จึงเกิดขึ้นมาในสถานที่แห่งนี้ ร้านทุ่งเคียงดอย & เคียงดอยคาเฟ เป็นร้านกาแฟ เล็ก ๆ ไว้คอยต้อนรับผู้มาเยือนนั่งจิบกาแฟบองดูดอยดัง (ชื่อภูเขา) ว่าดังจริงสมชื่อหรือไม่ต้องมา พิสูจน์',
     'Strawberry_Garden_Chom_Doi_Homestay_is_an':
         'สวนสตอเบอร์รี่ชมดอย โฮมสเตย์แหล่งปลูกสตรอเบอร์รี่พันธุ์ดีของเชียงรายอีกแห่งหนึ่ง ด้วยการปลูก แบบปลอดสารพิษจึงให้รสชาติหวานกรอบและปลอดภัย ใกล้กันมีแปลงดอกดาวเรืองสีสวยให้ชมตาม ช่วงฤดูกาล',
+    'Hong_Hom_hh':
+        'โฮงฮอมผญ๋า โฮงยาหมอเมืองล้านนา ตําบลนางแล ศูนย์เผยแพร่ความรู้ภูมิปัญญาแบบพื้นบ้านล้านนา ให้บริการแก่นักท่องเที่ยว ด้วยศาสตร์การรักษาแบบล้านนาโบราณ อาทิ การย่ำขาง ตอกเส้น เช็ด แหก ย่างสมุนไพร อบสมุนไพร จู้ยา เป่า แบบล้านนาโบราณ เป็นต้น',
     'This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_':
         'แหล่งเรียนรู้วิธีการปลูกสับปะรดพันธุ์สายน้ำาผึ้ง (นางแล) พร้อมชิมสับปะรดจากสวน เนื้อเนียนละมุน ไม่มีเสี้ยนให้ระคายลิ้นเหมือนสับปะรดทั่วไป กลิ่นหอมหวานปานน้ำาผึ้ง เวลารับประกาusสชาติจะหวาน ชื่นใจแตกต่างจากสับปะรดทั่วไป ยืนยันความอร่อยจากการจดทะเบียน สิ่งบ่งชี้ทางภูมิศาสตร์ ว่า สับปะรดน้ําผึ้ง (นางแล) ต้องปลูกที่ตําบลนางแลเท่านั้น',
     'Doi_Din_Daeng_Pottery_is_one_of_the_best_pottery_production_site':
@@ -1045,5 +1081,9 @@ class Locales {
     'LIST': 'รายการ',
     'Not_found': 'ค้นหาไม่พบ',
     'Search_place': 'ค้นหาสถานที่',
+    'Office_hours_tt': 'เวลาทำการ : ',
+    'Place_tt': 'ที่ตั้ง : ',
+    'Telephone_tt': 'เบอร์โทร : ',
+    'Information_tt': 'ข้อมูลทั่วไป : ',
   };
 }

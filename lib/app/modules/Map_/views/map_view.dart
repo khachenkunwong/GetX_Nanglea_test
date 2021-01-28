@@ -73,11 +73,17 @@ class MapView extends GetView<MapController> {
               labelColor: Colors.white,
               unselectedLabelColor: Colors.grey,
               tabs: <Widget>[
-                Text(
-                  "MAP".tr,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "MAP".tr,
+                  ),
                 ),
-                Text(
-                  "LIST".tr,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "LIST".tr,
+                  ),
                 ),
               ],
             ),
@@ -235,7 +241,7 @@ Widget storeTab01(BuildContext context, controller) {
         childAspectRatio: 0.67,
         crossAxisCount: 2,
       ),
-      itemCount: 16,
+      itemCount: items.length,
       itemBuilder: (context, index) {
         return InkWell(
           onTap: () async {
@@ -244,63 +250,52 @@ Widget storeTab01(BuildContext context, controller) {
 
             await Future.delayed(Duration(milliseconds: 200));
             Get.toNamed(Routes.ITEM_LIST);
-
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (context) {
-            //       return ItemListView();
-            //     },
-            //     fullscreenDialog: true,
-            //   ),
-            // );
           },
-          child: Hero(
-            tag: "card${index}",
-            child: Card(
-                elevation: 10,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(8.0),
-                  ),
+          child: Card(
+              elevation: 10,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(8.0),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: <Widget>[
-                    Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: Container(
-                          height: 183.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(10.0),
-                              topRight: Radius.circular(10.0),
-                            ),
-                            image: DecorationImage(
-                              fit: BoxFit.fill,
-                              image: ExactAssetImage(imagess[index]),
-                            ),
-                          ),
-                        )),
-                    Flexible(
-                      flex: 0,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Flexible(
+                      flex: 1,
                       fit: FlexFit.tight,
-                      child: Wrap(
-                        children: <Widget>[
-                          ListTile(
-                            title: Text('${hardtext[index].tr}',
-                                style: TextStyle(
-                                  fontFamily: "Kanit",
-                                  color: Colors.grey[600],
-                                )),
+                      child: Container(
+                        height: 183.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(10.0),
+                            topRight: Radius.circular(10.0),
                           ),
-                        ],
-                      ),
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: ExactAssetImage(
+                                // "assets/images/im/images14/007.jpg"
+                                imagess[index]),
+                          ),
+                        ),
+                      )),
+                  Flexible(
+                    flex: 0,
+                    fit: FlexFit.tight,
+                    child: Wrap(
+                      children: <Widget>[
+                        ListTile(
+                          title: Text('${hardtext[index].tr}',
+                              style: TextStyle(
+                                fontFamily: "Kanit",
+                                color: Colors.grey[600],
+                              )),
+                        ),
+                      ],
                     ),
-                  ],
-                )),
-          ),
+                  ),
+                ],
+              )),
         );
       },
     ),

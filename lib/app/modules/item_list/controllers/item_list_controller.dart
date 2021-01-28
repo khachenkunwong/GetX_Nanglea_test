@@ -7,51 +7,6 @@ import 'package:nanglea/app/data/assets.dart';
 class ItemListController extends GetxController {
   //TODO: Implement ItemListController
   ScrollController scrollController;
-  Widget buildFab() {
-    //starting fab position
-    double defaultTopMargin = 305.0 - 4.0;
-    //pixels from top where scaling should start
-    double scaleStart = 96.0;
-    //pixels from top where scaling should end
-    double scaleEnd = scaleStart / 2;
-
-    double top = defaultTopMargin;
-    double scale = 1.0;
-    if (scrollController.hasClients) {
-      double offset = scrollController.offset;
-      top -= offset;
-      if (offset < defaultTopMargin - scaleStart) {
-        //offset small => don't scale down
-        scale = 1.0;
-      } else {
-        print("else");
-        //offset passed scaleEnd => hide fab
-        scale = 0.0;
-      }
-    }
-    if (scale == 0.0) {
-      return Text('');
-    } else {
-      return Positioned(
-        top: top,
-        right: 16.0,
-        child: new Transform(
-          transform: new Matrix4.identity()..scale(scale),
-          alignment: Alignment.center,
-          child: new FloatingActionButton(
-            onPressed: () => {
-              openOnGoogleMapApp(sets[l[0]][0], sets[l[0]][1], hardtext[l[0]])
-            },
-            child: new Icon(
-              Icons.directions,
-              size: 33.0,
-              color: Colors.white,
-            ),
-          ),
-        ),
-      );
-    }
-  }
 
   openOnGoogleMapApp(double latitude, double longitude, hardtext) async {
     //ส่งไป app google map เเล้วลากเส้นตำเเหน่งปัจจุบันไปเป้าหมาย
@@ -62,6 +17,84 @@ class ItemListController extends GetxController {
         destinationTitle: hardtext,
       );
     }
+  }
+
+  Widget buildFab() {
+    //starting fab position
+    final double defaultTopMargin = 305.0 - 4.0;
+    //pixels from top where scaling should start
+    final double scaleStart = 96.0;
+    //pixels from top where scaling should end
+    final double scaleEnd = scaleStart / 2;
+
+    double top = defaultTopMargin;
+    double scale = 1.0;
+    if (scrollController.hasClients) {
+      double offset = scrollController.offset;
+      top -= offset;
+      if (offset < defaultTopMargin - scaleStart) {
+        //offset small => don't scale down
+        scale = 1.0;
+      } else {
+        //offset passed scaleEnd => hide fab
+        scale = 0.0;
+      }
+    }
+
+    return Positioned(
+      top: top,
+      right: 16.0,
+      child: new Transform(
+        transform: new Matrix4.identity()..scale(scale),
+        alignment: Alignment.center,
+        child: new FloatingActionButton(
+          onPressed: () => {
+            openOnGoogleMapApp(sets[l[0]][0], sets[l[0]][1], hardtext[l[0]])
+          },
+          child: new Icon(
+            Icons.directions,
+            size: 33.0,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget texthart() {
+    final double defaultTopMargin = 305.0 - 4.0;
+    //pixels from top where scaling should start
+    final double scaleStart = 96.0;
+    //pixels from top where scaling should end
+
+    double scale = 0.0;
+
+    if (scrollController.hasClients) {
+      double offset = scrollController.offset;
+
+      if (offset < defaultTopMargin - scaleStart) {
+        //offset small => don't scale down
+        scale = 0.0;
+      } else {
+        //offset passed scaleEnd => hide fab
+        scale = 1.0;
+      }
+    }
+
+    return Transform(
+      transform: new Matrix4.identity()..scale(scale), //กำหนดขนาด
+      child: Wrap(
+        direction: Axis.vertical,
+        children: <Widget>[
+          Text(hardtext[l[0]].tr,
+              style: TextStyle(
+                fontFamily: "Kanit",
+                color: Colors.white,
+                fontSize: 20.0,
+              )),
+        ],
+      ),
+    );
   }
 
   List<Map> items = [
@@ -80,7 +113,9 @@ class ItemListController extends GetxController {
   void onInit() {
     super.onInit();
     scrollController = new ScrollController();
-    scrollController.addListener(() {});
+    scrollController.addListener(() {
+      this.update();
+    });
   }
 
   @override

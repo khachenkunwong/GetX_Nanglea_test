@@ -24,7 +24,7 @@
   "Some_Sunday_Magic": "Some Sunday magic  餐厅",
   "Give_Green_Farm_House": "Give green绿色食品餐厅",
   "Di_Angello_Pizzeria": "Di Angello 意大利正宗披萨店",
-  "Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang": "泰北兰纳传统按摩保健中心",
+  "Hong_Hom_Pa_Ya_Hong_Ya_Moh_Muang_Lanna_Nang": "本土泰式Lanna 传统按摩位于清莱Nang lea 县，感受泰北清莱文化，体验传统兰纳正宗..",
   "Suan_Khun_Poo_Grandfather_Graden": "爷爷有机菠萝种植.",
   "Ban_Pa_Oh_Community_Long_Neck_Karen": "长颈族村",
   "The_Art_Gallery_of_AjarnThawan_Duchanee_National_Artist_in_Visual_A": "景点介绍：这是一座用于存放并展览塔顽·达察尼（Thawan Duchanee） 泰国艺术家的私人古董、艺术品的博物馆，在这一片100多亩的土地上，里面建有41座各式的建筑，其中大部分的设计灵感来愿于历史的变迁：1.木结构时期 2.陶器时期3.混凝土时期4. 房屋及凉亭时期，此外，这里还适合寻找艺术灵感的好地方",
@@ -32,6 +32,7 @@
   "The_cultural_attraction": "这里坐落着几个少数民族古寨，是高原居民世世代代留下的杰作。经过千百年的各族人民的辛勤的劳动，依地势开垦了层层壮观的梯田。景观壮美，属于大自然景区绝佳景区，这里游客们还可体验一下农家生活（种植水稻）以及少数民族（拉祜、哈尼）风情。",
   "Tung_Kieng_Doi_Rest": "这一家小清新餐馆坐落于一望无际的田园，餐厅是由祖先传下来，据说最初是kru  La (奶奶）带着孙子参观农家田园，在大城市长大的孙子一看到水稻 螃蟹 小鱼就感兴趣 ，因此对其提出各种问题 。随后奶奶觉得这里可以让后代学习了解农家生活、且能更加了解家乡的各家文化。奶奶从竹木建造凉亭，此外还沿着田边构造了竹木桥 ，随后 游客渐渐光临，游客们见到此地的田园令游客们想在大自然环境中喝咖啡。因优美的山、田园风格而取了 tung kieng doi 餐厅。",
   "Strawberry_Garden_Chom_Doi_Homestay_is_an": "chom doi 草莓田园,这里是清莱种草莓的绝佳胜地之一，有机的种植使草莓的味道更好，营养更丰富 。周围还种着鲜艳的万寿花 开放时间：早上06.00至晚上18.00",
+  "Hong_Hom_hh":"本土泰式Lanna 传统按摩位于清莱Nang lea 县，感受泰北清莱文化，体验传统兰纳正宗的按摩！如：敲筋按摩法、草药火疗及草药熏蒸治疗多种可选择。",
   "This_learning_source_is_about_how_to_grow_honey_pineapples_Nang_Lae_and_to_taste_fresh_": "自然的田园风光，参观insee爷爷菠萝种植园可了解更多的关于清莱最佳蜂蜜菠萝（Nang lea)品种，还可以品尝新鲜的菠萝,相对普通菠萝，这里的菠萝口感更加细腻，浓郁脆甜，肉质柔软纤维少，不塞牙。成熟后的菠萝浓香四溢，甜美可口，毫不酸涩，清莱的菠萝还被“国家地形地貌”指示蜂蜜菠萝只需在清莱Nang lea 县种植",
   "Doi_Din_Daeng_Pottery_is_one_of_the_best_pottery_production_site": "Doi Din Dang 的陶器属于泰国著名产地之一，这里所展现着各种各样的陶器艺品由Somluk puntibun 陶艺師设计，采用当地的粘土及人工捏制而成。这些艺品全都通过人手工制作",
   "Five_long_neck_Karen_hilltribe_villages_are_cultural_attractions_including_the_long": "位于泰北地区清莱五族村的长颈族村是个文化景点，除了长颈族这里还有哈尼族、瑶族、拉祜族跨境而居，村里还展现民族文化及艺术，让游客体验泰北少数民族的民俗风情",
@@ -102,5 +103,9 @@
   "MAP":"地图",
   "LIST": "清单",
   "Not_found": "Not found",
-  "Search_place": "搜索 地点"
+  "Search_place": "搜索 地点",
+  "Office_hours_tt":"工作 时间 : ",
+  "Place_tt":"地点 : ",
+  "Telephone_tt":"电话 : ",
+  "Information_tt":"信息 : "
 }

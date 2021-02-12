@@ -1,13 +1,23 @@
 import 'dart:ui';
 
 import 'package:get/get.dart';
+import 'package:location/location.dart';
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
 
   final count = 0.obs;
+  Location location;
+  LocationData currentLocation;
+
   @override
-  void onInit() {}
+  void onInit() {
+    location = new Location(); //ตัว ทำให้มีลูกศอน location ของตัวเอง
+    location.onLocationChanged.listen((LocationData cLoc) {
+      currentLocation = cLoc;
+    });
+  }
+
   @override
   void onReady() {}
   @override

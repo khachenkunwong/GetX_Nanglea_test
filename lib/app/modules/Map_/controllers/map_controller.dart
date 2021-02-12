@@ -14,16 +14,17 @@ class MapController extends GetxController {
 
   //TODO: Implement MapController
   TravelList selectedItem;
-  LocationData currentLocation;
+  //LocationData currentLocation;
   String searchAddr;
-  TabController tabController; // ตัวควบคุม Tab
+  //TabController tabController; // ตัวควบคุม Tab
   PageController pageController;
   int prevPage; //ใช้กับ _onScroll()
   GoogleMapController controller1;
-  Location location;
+  //Location location;
   double originLatitude = 19.992118;
   double originLongitude = 99.860694;
   List<Marker> allMarkers = [];
+  static List numbers = [3];
 
   List<Map> items = [
     {"value": 0, "text": 'ภาษาไทย', "lc_sub": "th", "lc": "TH"},
@@ -32,6 +33,12 @@ class MapController extends GetxController {
     {"value": 3, "text": '中文', "lc_sub": "cn", "lc": "CN"},
     {"value": 4, "text": '한국어', "lc_sub": "kr", "lc": "KR"},
   ];
+  Future<String> delayTime() async {
+    var txt = await Future.delayed(Duration(seconds: numbers[0]), () {
+      return 'data';
+    });
+    return txt;
+  }
 
   List<TravelList> list = <TravelList>[
     TravelList(
@@ -169,10 +176,12 @@ class MapController extends GetxController {
     pageController = PageController(initialPage: 1, viewportFraction: 0.75)
       ..addListener(_onScroll);
 
-    location = new Location(); //ตัว ทำให้มีลูกศอน location ของตัวเอง
-    location.onLocationChanged.listen((LocationData cLoc) {
-      currentLocation = cLoc;
-    });
+    // location = new Location(); //ตัว ทำให้มีลูกศอน location ของตัวเอง
+    // location.onLocationChanged.listen((LocationData cLoc) {
+    //   currentLocation = cLoc;
+    // });
+    //tabController = TabController(vsync: this, length: 2);
+    //tabController.addListener(() => this.update());
   }
 
   void _onScroll() {
@@ -187,9 +196,6 @@ class MapController extends GetxController {
   }
 
   moveCamera() {
-    print("movecamera");
-    print("${coffeeShops[pageController.page.toInt()].locationCoords}");
-
     ///การกดเลื่อนตาม
     controller1.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
         //CameraPosition ใช้อั้นเดียวกันกับค่าเริ่มต้น
@@ -323,7 +329,11 @@ class MapController extends GetxController {
   void onReady() {}
 
   @override
-  void onClose() {}
+  void onClose() {
+    numbers.insert(0, 1);
+    //tabController.dispose();
+    super.dispose();
+  }
 
   void changeLanguage(var param1, var param2) {
     var locale = Locale(param1, param2);

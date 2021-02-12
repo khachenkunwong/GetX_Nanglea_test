@@ -72,6 +72,7 @@ class MapView extends GetView<MapController> {
               indicatorColor: Colors.white,
               labelColor: Colors.white,
               unselectedLabelColor: Colors.grey,
+              //controller: controller.tabController,
               tabs: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -90,12 +91,38 @@ class MapView extends GetView<MapController> {
           ),
           body: TabBarView(
             physics: NeverScrollableScrollPhysics(),
+            //controller: controller.tabController,
             children: <Widget>[
               Center(
-                child: storeTab(context, controller),
+                child: FutureBuilder(
+                  future: controller.delayTime(),
+                  builder: (BuildContext contexts, AsyncSnapshot snapshot) {
+                    if (snapshot.hasData) {
+                      print(snapshot.data);
+                      return storeTab(context, controller);
+                    } else if (snapshot.hasError) {
+                      return Text("Errror !!");
+                    } else {
+                      return CircularProgressIndicator();
+                    }
+                  },
+                ),
+                // storeTab(context, controller),
               ),
               Center(
                 child: storeTab01(context, controller),
+                // child: FutureBuilder(
+                //   future: controller.delayTime(),
+                //   builder: (BuildContext contexts, AsyncSnapshot snapshot) {
+                //     if (snapshot.hasData) {
+                //       return storeTab01(context, controller);
+                //     } else if (snapshot.hasError) {
+                //       return Text("Errror !!");
+                //     } else {
+                //       return CircularProgressIndicator();
+                //     }
+                //   },
+                // ),
               )
             ],
           )),
